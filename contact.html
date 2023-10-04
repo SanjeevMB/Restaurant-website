@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+            width: 30%;
+            margin: auto;
+        }
+        label{
+            font-size: 20px;
+            font-weight: bolder;
+            margin-bottom: 10px;
+        }
+        .height {
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    <form action="get">
+        <label for="query">Type of Query</label>
+        <br>
+        <input class="height" type="text" placeholder="Site related issue" id="query">
+        <br>
+        <label for="name">Name</label>
+        <br>
+        <input class="height" type="text" name="customerName" id="name" placeholder="Enter your name">
+        <br>
+        <label for="email">Email-Id</label>
+        <br>
+        <input class="height" type="email" name="myEmail" id="email" placeholder="Enter your Number">
+        <br>
+        <label for="phNo">Phone Number</label>
+        <br>
+        <input class="height" type="number" name="customerNumber" id="phNo" placeholder="Enter your number">
+        <br>
+        <label for="radio">Are you member of OnlineFoodShop: </label>
+        <label for="yes">Yes</label>
+        <input type="radio" name="membership" id="yes">
+        <label for="no">No</label>
+        <input type="radio" name="membership" id="no">
+        <br>
+        <label for="comment">Ellaborate your query</label>
+        <br>
+        <textarea name="customerComment" id="comment" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
